@@ -1,0 +1,59 @@
+project: airport-nc
+program: train.py
+method: bayes
+metric:
+  goal: maximize
+  name: test_f1
+parameters:
+  lr:
+    min: 0.001
+    max: 0.5
+  dropout:
+    min: 0.0
+    max: 0.5
+  cuda:
+    value: 0
+  epochs:
+    values: [1000, 5000, 10000]
+  weight-decay:
+    min: 0.0
+    max: 0.002
+  optimizer:
+    value: Adam
+  momentum:
+    min: 0.5
+    max: 1.0
+  seed:
+    value: 0
+  save:
+    value: 0
+  save-dir:
+    value: None
+  lr-reduce-freq:
+    values: [None, 750, 1500]
+  gamma:
+    values: [0.1, 0.5, 0.9]
+  print-epoch:
+    value: True
+  grad-clip:
+    value: None
+  task:
+    value: 'nc'
+  model:
+    value: MLP
+  manifold:
+    value: Euclidean
+  normalize-feats:
+    value: 0
+  num-layers:
+    values: [2, 3, 4]
+  bias:
+    values: [0, 1]
+  act:
+    values: [None, relu, tanh]
+  hdim:
+    values: [16, 24, 32]
+  dim:
+    values: [16, 24, 32]
+  dataset:
+    value: airport
