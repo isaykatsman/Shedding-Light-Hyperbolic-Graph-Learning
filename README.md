@@ -1,6 +1,6 @@
 ## Shedding Light on Problems with Hyperbolic Graph Learning
 
-We provide the code for [Shedding Light on Problems with Hyperbolic Graph Learning](https://arxiv.org/abs/2006.10254) in this repository.
+We provide the code for [Shedding Light on Problems with Hyperbolic Graph Learning](https://arxiv.org/pdf/2411.06688) in this repository.
 
 Summary: Our work makes a surprising discovery: when simple Euclidean models with comparable numbers of parameters are properly trained in the same environment, in most cases, they perform as well, if not better, than all introduced hyperbolic graph representation learning models, even on graph datasets previously claimed to be the most hyperbolic as measured by Gromov $\delta$-hyperbolicity (i.e., perfect trees). This observation gives rise to a simple question: how can this be? We answer this question by taking a careful look at the field of hyperbolic graph representation learning as it stands today, highlight a number of crucial issues and resolve a core subset of them in our paper.
 
