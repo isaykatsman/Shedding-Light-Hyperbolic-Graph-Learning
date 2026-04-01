@@ -116,7 +116,7 @@ GCN on $\text{Tree1111}_{0}$:
 python train.py --act=relu --bias=0 --cuda=-1 --dataset=tree1111_g00_lp --dim=32 --dropout=0.4469882260962948 --epochs=1000 --gamma=0.5 --grad-clip=None --lr=0.2382416871345659 --lr-reduce-freq=750 --manifold=Euclidean --model=GCN --momentum=0.6658219653845718 --normalize-feats=0 --num-layers=4 --optimizer=Adam --print-epoch=True --save=0 --save-dir=None --seed=0 --task=lp --weight-decay=0.001222755084943606 --patience=-1
 ```
 
-HyboNet on $\text{Tree1111}_{0}$:
+HyboNet on $\text{Tree1111}_{0}$ (please run this command in the context of the [Fully Hyperbolic Neural Network repo](https://github.com/chenweize1998/fully-hyperbolic-nn/tree/main)):
 
 ```
 python train.py --act=tanh --bias=0 --cuda=-1 --dataset=tree1111_g00_lp --dim=24 --dropout=0.3654186895693169 --epochs=10000 --gamma=0.9 --grad-clip=None --lr=0.4941337733951095 --lr-reduce-freq=750 --manifold=Lorentz --model=HyboNet --momentum=0.6215759601493149 --normalize-feats=0 --num-layers=4 --optimizer=radam --patience=-1 --print-epoch=True --save=0 --save-dir=None --seed=0 --task=lp --weight-decay=0.0012511827632878463 --patience=-1
